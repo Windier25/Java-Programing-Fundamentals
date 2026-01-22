@@ -104,11 +104,10 @@ public class Java_Programing_Fundamentals {
 
 
         int int1 = 1;
-        while (int1 < 5) ;
-            {
-                System.out.println("While Loop Iteration: " + int1);
-                int1 = int1 + 1;
-            }
+        boolean loop = true;
+        while (int1 < 11) {
+            System.out.println("While Loop Iteration: " + int1);
+            int1 = int1 +1;
         }
     }
 
