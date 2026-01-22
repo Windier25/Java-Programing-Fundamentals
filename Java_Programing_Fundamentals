@@ -1,0 +1,121 @@
+/*============================================================================
+Programing Fundamentals Task : 1
+==============================================================================*/
+public class Java_Programing_Fundamentals {
+    //------------------------------------------------------------------------
+    // -- start of the public static void main method --
+    public static void main () {
+        //--------------------------------------------------------------------
+        //-- variable declarations --
+        int num1 = 10;
+        int num2 = 20;
+        String mode = "addition";
+//        -possible values: addition, subtraction, multiplication, division
+//                -- changing one variable will change the programs behavior and
+//        expected output --
+        System.out.println ("The values being used are: number one : " + num1 + " number 2 : " + num2 + " Function : " + mode);
+        GreaterEqualLess(num1, num2, mode);
+    }
+
+    //------------------------------------------------------------------------
+    public static void GreaterEqualLess (int num1, int num2, String mode) {
+//        --------------------------------------------------------------------
+//                -- selection for the greater / equal to / less than --
+//                allowing the program to check the relationship between
+//                num1 and num2
+        if (num2 > num1) {
+            System.out.println("num2 is greater than num1");
+
+        }else if (num2 < num1) {
+            System.out.println("num2 is less than num1");
+
+        } else {
+            System.out.println("num1 is equal to num2");
+        }
+        PositiveNegativeZero(num1, num2, mode);
+    }
+
+    //------------------------------------------------------------------------
+    public static void PositiveNegativeZero (int num1, int num2, String mode) {
+        //------------------------------------------------------------------------
+        //-- selection for positive / negative / zero for mun1 --
+        if (num1 < 0) {
+            System.out.println("num1 is negative");
+        }
+        else if (num1 == 0) {
+            System.out.println("num1 is zero");
+        } else {
+            System.out.println("num1 is positive");
+
+        }
+
+        //--selection for positvice / negative / zero for num 2
+        if (num2 < 0) {
+            System.out.println("number 2 is a negative");
+        } else if (num2 == 0) {
+            System.out.println("number 2 is zero");
+        } else {
+            System.out.println("number 2 is positive");
+        }
+
+        System.out.println("number 1 is " + num1 + " number 2 is " + num2);
+        Calc(mode, num1, num2);
+    }
+
+    //------------------------------------------------------------------------
+    public static void Calc (String mode, int num1, int num2) {
+//        ------------------------------------------------------------------------
+//                -- selection for arithmetic operations --
+//                ~~ for the program to carry out this also
+//        allows the user to see the output for the specific
+//        operation they requested for ~~
+
+        if (mode == "addition") {
+            System.out.println("The sum is: " + (num1 + num2));
+
+        } else if (mode == "subtraction") {
+            System.out.println("The difference is: " + (num1 - num2));
+
+        } else if (mode == "multiplication") {
+            System.out.println("The product is: " + (num1 * num2));
+
+        } else if (mode == "division") {
+            System.out.println("The quotient is: " + (num1 / num2));
+
+        } else {
+            System.out.println("Invalid mode selected.");
+        }
+        Loops_for ();
+    }
+
+    //    ------------------------------------------------------------------------
+    public static void Loops_for (){
+        //------------------------------------------------------------------------
+        //-- loop to print iteration numbers from 1 to 10 --
+
+//        ____________________________________________________________________
+        //-- for loop --
+        for (int i = 1; i<= 10; i++) {
+            System.out.println("Iteration number: " + i);
+
+//        ____________________________________________________________________
+//                -- while loop --
+//                -- prints iteration numbers from 1 to 4 --
+
+
+        int int1 = 1;
+        while (int1 < 5) ;
+            {
+                System.out.println("While Loop Iteration: " + int1);
+                int1 = int1 + 1;
+            }
+        }
+    }
+
+
+}
+
+//============================================================================
+// -- END OF PROGRAM --
+//============================================================================
+
