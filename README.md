@@ -35,8 +35,12 @@ this program for the 'for loop' does work even though the 'while loop' doesn't
 
 ***-- while loop --***
 [!EXPECTED]
-~~ the while program is appost to loop 5 times while printing 'While Loop Iteration: [number]' to the display for the user to view within the terminal of the program (due to it being Java)
+~~ the while program is appost to loop 10 times while printing 'While Loop Iteration: [number]' to the display for the user to view within the terminal of the program (due to it being Java)
 
+[!NOTE]
+-- i got the while loop working and have changed it within here
+
+<-- IGNORE THE LINES BELOW -->
 [!IMPORTANT]
 ~~ the 'while' loop doesn't work due to an error with the conditioning of the loop.
 ~~ the error that has occoured i can not fix due to lack of knowledge as well as unclear solutions methods.
